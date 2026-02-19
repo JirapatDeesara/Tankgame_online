@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 3059993190098951752}
   - component: {fileID: 4209818816346647572}
   - component: {fileID: 4124879125925764738}
-  - component: {fileID: -7033415106242827769}
+  - component: {fileID: 3069128995675902152}
   m_Layer: 7
   m_Name: HealingZone
   m_TagString: Untagged
@@ -301,7 +301,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4.0078125, y: 4.015625}
   m_EdgeRadius: 0
---- !u!114 &-7033415106242827769
+--- !u!114 &3069128995675902152
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -316,7 +316,7 @@ MonoBehaviour:
   ShowTopMostFoldoutHeaderGroup: 1
   healPowerBar: {fileID: 7159546936276609101}
   maxHealPower: 30
-  healCooldown: 10
+  healCooldown: 60
   healTickRate: 1
   coinsPerTick: 10
   healthPerTick: 10

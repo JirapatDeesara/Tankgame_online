@@ -4866,6 +4866,7 @@ GameObject:
   - component: {fileID: 5170966072097287519}
   - component: {fileID: 5474066361208726995}
   - component: {fileID: 626227115511038307}
+  - component: {fileID: 4141332634817829433}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -4904,7 +4905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 2010307606
+  GlobalObjectIdHash: 1812165863
   InScenePlacedSourceGlobalObjectIdHash: 0
   DeferredDespawnTick: 0
   Ownership: 1
@@ -5039,6 +5040,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileLauncher
   ShowTopMostFoldoutHeaderGroup: 1
   inputReader: {fileID: 11400000, guid: 3f994f14f04e60044958dc8c9f7f1076, type: 2}
+  wallet: {fileID: 4141332634817829433}
   projectileSpawnPoint: {fileID: 3215458030609457912}
   serverProjectilePrefab: {fileID: 3067120138823479364, guid: 2da9737e038d4e0449296e8a012a0378, type: 3}
   clientProjectilePrefab: {fileID: 3058777893619337933, guid: f2789e36c3f815945bf877a85382291d, type: 3}
@@ -5047,6 +5049,7 @@ MonoBehaviour:
   projectileSpeed: 30
   fireRate: 0.75
   muzzleFlashDuration: 0.075
+  costToFire: 5
 --- !u!114 &5474066361208726995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5076,8 +5079,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TankPlayer
   ShowTopMostFoldoutHeaderGroup: 1
-  cinemachineCamera: {fileID: 4761097951768405597}
+  virtualCamera: {fileID: 4761097951768405597}
+  <Health>k__BackingField: {fileID: 5474066361208726995}
+  <Wallet>k__BackingField: {fileID: 4141332634817829433}
   ownerPriority: 15
+--- !u!114 &4141332634817829433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470218966613298916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c5124cbf0ba63540af25d9d12683b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoinWallet
+  ShowTopMostFoldoutHeaderGroup: 1
+  TotalCoins:
+    m_InternalValue: 0
 --- !u!1 &1269364764866761503
 GameObject:
   m_ObjectHideFlags: 0

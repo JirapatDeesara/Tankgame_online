@@ -7,20 +7,14 @@ using System.Collections.Generic;
 public class HealingZone : NetworkBehaviour
 {
     [Header("References")]
-    [SerializeField]
-    private Image healPowerBar;
+    [SerializeField] private Image healPowerBar;
 
     [Header("Settings")]
-    [SerializeField]
-    private int maxHealPower = 30;
-    [SerializeField]
-    private float healCooldown = 60f;
-    [SerializeField]
-    private float healTickRate = 1f;
-    [SerializeField]
-    private int coinsPerTick = 10;
-    [SerializeField]
-    private int healthPerTick = 10;
+    [SerializeField] private int maxHealPower = 30;
+    [SerializeField] private float healCooldown = 60f;
+    [SerializeField] private float healTickRate = 1f;
+    [SerializeField] private int coinsPerTick = 10;
+    [SerializeField] private int healthPerTick = 10;
 
     private float remainingCooldown;
     private float tickTimer;
