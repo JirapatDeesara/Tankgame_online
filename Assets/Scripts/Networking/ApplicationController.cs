@@ -4,7 +4,7 @@ using UnityEngine;
 public class ApplicationController : MonoBehaviour
 {
     [SerializeField] private ClientSingleton clientPrefab;
-
+    [SerializeField] private HostSingleton hostPrefab;
     async void Start()
     {
         DontDestroyOnLoad(gameObject);
@@ -20,8 +20,12 @@ public class ApplicationController : MonoBehaviour
         else
         {
             ClientSingleton clientSingleton = Instantiate(clientPrefab);
-
             await clientSingleton.CreateClient();
+
+            HostSingleton hostSingleton = Instantiate(hostPrefab);
+            hostSingleton.CreateHost();
+
+            //Go to main Menu
         }
     }
 
