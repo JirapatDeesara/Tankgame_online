@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using Unity.Netcode;
 using Unity.Netcode.Transports.UTP;
 using Unity.Networking.Transport.Relay;
-using Unity.Services.Authentication;
 using Unity.Services.Lobbies;
 using Unity.Services.Lobbies.Models;
 using Unity.Services.Relay;
 using Unity.Services.Relay.Models;
+using Unity.Services.Authentication;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -20,7 +20,7 @@ public class HostGameManager : IDisposable
     private string joinCode;
     private string lobbyId;
 
-    private NetworkServer networkServer;
+    public NetworkServer NetworkServer { get; private set; }
 
     private const int MaxConnections = 20;
     private const string GameSceneName = "Game";
@@ -79,7 +79,7 @@ public class HostGameManager : IDisposable
             return;
         }
 
-        networkServer = new NetworkServer(NetworkManager.Singleton);
+        NetworkServer = new NetworkServer(NetworkManager.Singleton);
 
         UserData userData = new UserData
         {
@@ -125,8 +125,6 @@ public class HostGameManager : IDisposable
             lobbyId = string.Empty;
         }
 
-        networkServer?.Dispose();
+        NetworkServer?.Dispose();
     }
-
-
 }
