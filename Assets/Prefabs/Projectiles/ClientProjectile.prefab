@@ -153,8 +153,29 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7328190899722366855, guid: 0693d8974db0c3f42a3dd2d6b14f03ce, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3952574113631674397}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1055273625062073837, guid: 0693d8974db0c3f42a3dd2d6b14f03ce, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4802129810659024892}
   m_SourcePrefab: {fileID: 100100000, guid: 0693d8974db0c3f42a3dd2d6b14f03ce, type: 3}
+--- !u!1 &3058777893619337933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1055273625062073837, guid: 0693d8974db0c3f42a3dd2d6b14f03ce, type: 3}
+  m_PrefabInstance: {fileID: 2654840698365701920}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4802129810659024892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3058777893619337933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 317be6e4993bf4843a6c363fdc2ff0b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DealDamageOnContact
+  damage: 25
 --- !u!4 &4712195952308764839 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7328190899722366855, guid: 0693d8974db0c3f42a3dd2d6b14f03ce, type: 3}
