@@ -773,6 +773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ApplicationController
   clientPrefab: {fileID: 4335615234416181414, guid: 2369d04667eac4b4997e158c2dc3675f, type: 3}
   hostPrefab: {fileID: 1198827973437537663, guid: cb01001752c8a784caafdd91fe07f263, type: 3}
+  playerPrefab: {fileID: 6075260595375829579, guid: 4dfcce2fb6622f84b9d0ccb4ca2b161a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
